@@ -1,0 +1,8 @@
+{
+	"name": "Citas",
+	"slug": "citas",
+	"namespace": "citas",
+	"version": "1.0",
+	"description": "sistema de asignacion de citas medicas",
+	"enabled": true
+}

@@ -1,0 +1,11 @@
+{
+    "name": "yourapplication/users",
+    "description": "Yourapplication Users module.",
+    "keywords": ["yourapplication", "module", "users"],
+    "require": {
+        
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}
