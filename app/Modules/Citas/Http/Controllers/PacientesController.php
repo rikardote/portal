@@ -15,7 +15,7 @@ class PacientesController extends Controller
 	}
 
 	public function index()
-    {
+	{
     	$site = "citas";
 
     	$user = User::find(\Auth::user()->id);
@@ -28,8 +28,5 @@ class PacientesController extends Controller
 	        	echo "Acceso Restringido";
 	        }
         }
-
-        
-
-    }
+	}
 }
