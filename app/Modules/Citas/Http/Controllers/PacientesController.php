@@ -16,17 +16,21 @@ class PacientesController extends Controller
 
 	public function index()
 	{
-	    $site = "citas";
+	    $site = 'citas';
 
 	    $user = User::find(\Auth::user()->id);
 	    $user_espe = $user->permisos;
-	    foreach ($user_espe as $permiso) {
-			if ($permiso->name == $site) {
-				echo "SI esta ". $permiso->name;
-			}	
-			else {
-				echo "Acceso Restringido";
-			}
-	    }
+	    //dd($user_espe->implode('name', ', '));
+	    $x = ($user_espe->implode('name', ', '));
+	    $s = explode(",", $x);
+		//dd($site);	    
+  
+	   for($i=0; $i < count($s); $i++)
+    {
+        if($site == $s[$i] )
+            echo $i;
+    } 
+
 	}
+
 }
