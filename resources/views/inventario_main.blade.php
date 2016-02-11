@@ -6,9 +6,7 @@
     <title>Inventario de IP's</title>
 
     <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/bootstrap.css') }}">
-	<link rel="stylesheet" href="{{ asset('plugins/toastr/css/toastr.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    
+	
 </head>
 
 <body style="background:#E2FFED">
@@ -46,10 +44,7 @@
 	<script src="{{ asset('plugins/jquery/js/jquery.js') }}"></script>
 	<script src="{{ asset('plugins/bootstrap/js/bootstrap.js') }}"></script>
 	<script src="{{ asset('js/script.js') }}"></script>
-	<script src="{{ asset('plugins/toastr/js/toastr.min.js') }}"></script>
-	<script>
-	   $('#alert').delay(2000).fadeOut(800)
-	</script>
+
  
 </body>
 </html>

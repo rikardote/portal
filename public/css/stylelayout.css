@@ -1,0 +1,17 @@
+.modal-content {
+  background-color: #0480be;
+  color: navy;
+}
+.modal-body {
+  background-color: #fff;
+
+}
+.panelColor{
+  color: white;
+}
+.panelColorGreen{
+  color: #337AB7;
+}
+.panelColorRed{
+  color: #B1103C;
+}

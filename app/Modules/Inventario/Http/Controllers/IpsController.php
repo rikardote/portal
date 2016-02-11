@@ -14,6 +14,12 @@ use App\User;
 
 class IpsController extends Controller
 {
+    
+    public function __construct()
+    {
+        $this->middleware('auth');
+
+    }
     public function index()
     {	
         $site = "inventario";

@@ -32,6 +32,9 @@
 		!!}
 
 	</div>
-	{!! Form::submit('Actualizar', ['class' => 'btn btn-success']) !!}
+	<div align="right">
+		{!! Form::submit('Actualizar', ['class' => 'btn btn-success']) !!}
+
 <a href="{{ route('inventario.ip.destroy', $datos->id) }}" class="btn btn-danger">Liberar</a>
+</div>
 {!! Form::close() !!}

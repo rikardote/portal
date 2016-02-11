@@ -37,5 +37,7 @@
 			<option value="9">Piso 5</option>
 		</select>
 	</div>
-	{!! Form::submit('Registrar', ['class' => 'btn btn-success']) !!}
+	<div align="right">
+		{!! Form::submit('Registrar', ['class' => 'btn btn-success']) !!}
+	</div>
 {!! Form::close() !!}
