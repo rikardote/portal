@@ -4,7 +4,7 @@ a:hover, a:active, a:focus { color: #3C338D; -webkit-transition: all 0.3s ease-i
 header { padding: 20px 0; margin-bottom: 20px; color: white; }
 
 footer { border-top: 1px solid #ccc; margin: 40px 0; padding-top: 20px; text-align: right; }
-.contenedor { max-width: 850px; margin: 0 auto; width: 96%; padding: 0 2%; }
+.contenedor { max-width: 800px; margin: 0 auto; width: 100%; padding: 0 2%; }
 article {
   -webkit-column-width: 190px;
      -moz-column-width: 190px;
@@ -14,3 +14,4 @@ article {
 p.created_at { margin: 0; padding: 0; }
 article h2 { margin: 0 0 10px 0; padding: 0; }
 .fuente {font-size:xx-small; background-color: #0480be; color: white; }
+.fuentelibre {font-size:xx-small; background-color: green; color: white; }
