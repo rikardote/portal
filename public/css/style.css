@@ -13,21 +13,4 @@ article {
 
 p.created_at { margin: 0; padding: 0; }
 article h2 { margin: 0 0 10px 0; padding: 0; }
-.fuente {font-size:xx-small; background-color: #66FFFF; color: grey; }
-.modal-content {
-  background-color: #0480be;
-  color: navy;
-}
-.modal-body {
-  background-color: #fff;
-
-}
-.panelColor{
-  color: white;
-}
-.panelColorGreen{
-  color: #337AB7;
-}
-.panelColorRed{
-  color: #B1103C;
-}
+.fuente {font-size:xx-small; background-color: #0480be; color: white; }
