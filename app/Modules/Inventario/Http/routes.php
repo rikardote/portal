@@ -16,23 +16,23 @@ Route::group(['prefix' => 'inventario'], function() {
 	   
 		Route::get('/', 'IpsController@index');
 		//Route::resource('ip', 'IpsController');
-		Route::get('ip/{ip}', [
+		Route::get('/{ip}', [
 	        'uses' => 'IpsController@create',
 	        'as' => 'inventario.ip.create'
     	]);
-    	Route::get('ip/{ip}/edit', [
+    	Route::get('/{ip}/edit', [
 	        'uses' => 'IpsController@edit',
 	        'as' => 'inventario.ip.edit'
     	]);
-    	Route::put('ip/{id}/update', [
+    	Route::patch('/{id}/update', [
 	        'uses' => 'IpsController@update',
 	        'as' => 'inventario.ip.update'
    		 ]);
-    	Route::get('ip/{id}', [
+    	Route::post('/{id}', [
 	        'uses' => 'IpsController@store',
 	        'as' => 'inventario.ip.store'
    		 ]);
-    	Route::get('ip/{id}/destroy', [
+    	Route::get('/{id}/destroy', [
 	        'uses' => 'IpsController@destroy',
 	        'as' => 'inventario.ip.destroy'
    		 ]);

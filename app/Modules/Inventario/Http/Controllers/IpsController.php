@@ -4,9 +4,9 @@ namespace App\Modules\inventario\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
+//use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
+use App\Modules\Inventario\Http\Requests\IpRequest;
 use App\Modules\Inventario\Http\Domain\Models\Ip;
 use App\User;
 //use Toastr;
@@ -59,8 +59,8 @@ class IpsController extends Controller
     	$datos = new Ip($request->all());	
     	$datos->save();
 
-		Toastr::success('Ip Asignada Correctamente');
-    	return redirect()->route('ip.index');
+		//Toastr::success('Ip Asignada Correctamente');
+    	return redirect('inventario');
     }
 
     public function update(Request $request, $id)
@@ -69,16 +69,16 @@ class IpsController extends Controller
         $dato->fill($request->all());
         $dato->save();
 		//Toastr::success('Ip Actualizada Correctamente');
-		Flash::success('Ip Actualizada Correctamente');
-        return redirect()->route('ip.index');
+		//Flash::success('Ip Actualizada Correctamente');
+        return redirect('inventario');
     }
 	public function destroy($id)
     {
         $dato = Ip::find($id);
 
         $dato->delete();
-      	Toastr::error('Ip Liberada Correctamente');
-        return redirect()->route('ip.index');
+      	//Toastr::error('Ip Liberada Correctamente');
+        return redirect('inventario');
     } 
 
 }
