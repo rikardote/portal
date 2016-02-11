@@ -1,0 +1,8 @@
+{
+	"name": "inventario",
+	"slug": "inventario",
+	"namespace": "Inventario",
+	"version": "1.0",
+	"description": "sistema de inventario de direcciones ips",
+	"enabled": true
+}

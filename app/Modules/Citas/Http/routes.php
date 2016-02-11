@@ -14,6 +14,6 @@
 Route::group(['prefix' => 'citas'], function() {
 	Route::group(['middleware' => 'web'], function () {
 	   
-		Route::get('/', 'PacientesController@index');
+		Route::get('/', 'CitasController@index');
 	});
 });
