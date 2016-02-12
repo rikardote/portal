@@ -4,19 +4,19 @@
 	 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 @endsection
 @section('content')
-<nav class="floating-menu supreme-container">
-<a style="color: black; background-color: white;" href="{{route('inventario.ip.index')}}">TODAS</a>
-<a style="background-color: red;" href="{{ route('inventario.ip.show', 1) }}">Sotano</a>
-<a style="background-color: orange;" href="{{ route('inventario.ip.show', 2) }}">Bunker</a>
-<a style="background-color: purple;" href="{{ route('inventario.ip.show', 3) }}">Manteniemiento</a>
-<a style="background-color: #3C338D;" href="{{ route('inventario.ip.show', 4) }}">Planta Baja</a>
-<a style="background-color: #3399FF;" href="{{ route('inventario.ip.show', 5) }}">Piso 1</a>
-<a style="background-color: #669999;" href="{{ route('inventario.ip.show', 6) }}">Piso 2</a>
-<a style="background-color: #990066;" href="{{ route('inventario.ip.show', 7) }}">Piso 3</a>
-<a style="background-color: #9999FF;" href="{{ route('inventario.ip.show', 8) }}">Piso 4</a>
-<a style="background-color: #000000;" href="{{ route('inventario.ip.show', 9) }}">Piso 5</a>
-<a style="color: black; background-color: yellow;" href="http://www.quackit.com/database/">LIBRE</a>
-</nav>
+	<nav class="floating-menu supreme-container">
+	<a style="color: black; background-color: white;" href="{{route('inventario.ip.index')}}">TODAS</a>
+	<a style="background-color: red;" href="{{ route('inventario.ip.show', 1) }}">Sotano</a>
+	<a style="background-color: orange;" href="{{ route('inventario.ip.show', 2) }}">Bunker</a>
+	<a style="background-color: purple;" href="{{ route('inventario.ip.show', 3) }}">Manteniemiento</a>
+	<a style="background-color: #3C338D;" href="{{ route('inventario.ip.show', 4) }}">Planta Baja</a>
+	<a style="background-color: #3399FF;" href="{{ route('inventario.ip.show', 5) }}">Piso 1</a>
+	<a style="background-color: #669999;" href="{{ route('inventario.ip.show', 6) }}">Piso 2</a>
+	<a style="background-color: #990066;" href="{{ route('inventario.ip.show', 7) }}">Piso 3</a>
+	<a style="background-color: #9999FF;" href="{{ route('inventario.ip.show', 8) }}">Piso 4</a>
+	<a style="background-color: #000000;" href="{{ route('inventario.ip.show', 9) }}">Piso 5</a>
+	<a style="color: black; background-color: yellow;" href="{{ route('inventario.ip.show', 0) }}">LIBRE</a>
+	</nav>
 
   	<div class="container supreme-container">
 	    <article>

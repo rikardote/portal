@@ -49,7 +49,12 @@ class IpsController extends Controller
     public function show($ubicacion_id)
     {   
         //$ips = Ip::all()->toArray();
-        $ips = Ip::where('ubicacion_id', '=', $ubicacion_id)->get()->toArray();
+        if ($ubicacion_id == 0) {
+                $ips = Ip::all()->toArray();
+            }else {
+                $ips = Ip::where('ubicacion_id', '=', $ubicacion_id)->get()->toArray();
+            }
+        
         while($row = array_shift($ips)) {
              $json[] = $row['ip'];
         }
@@ -58,7 +63,12 @@ class IpsController extends Controller
             $s = json_decode($x);
             //dd($s);
             //$datos = Ip::where('ip', '=', $ip);
-            return view('inventario::ip.show')->with('ips', $s);
+            if ($ubicacion_id == 0) {
+                return view('inventario::ip.libres')->with('ips', $s);
+            }else {
+                return view('inventario::ip.show')->with('ips', $s);
+            }
+            
         
     }   	
 
