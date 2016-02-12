@@ -14,8 +14,14 @@
 Route::group(['prefix' => 'inventario'], function() {
 	Route::group(['middleware' => 'web'], function () {
 	   
-		Route::get('/', 'IpsController@index');
-		//Route::resource('ip', 'IpsController');
+		Route::get('/', [
+	        'uses' => 'IpsController@index',
+	        'as' => 'inventario.ip.index'
+    	]);
+		Route::get('{ubicacion_id}/show', [
+	        'uses' => 'IpsController@show',
+	        'as' => 'inventario.ip.show'
+    	]);
 		Route::get('/{ip}', [
 	        'uses' => 'IpsController@create',
 	        'as' => 'inventario.ip.create'

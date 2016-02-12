@@ -5,7 +5,7 @@
 @endsection
 @section('content')
 <nav class="floating-menu supreme-container">
-
+<a style="color: black; background-color: white;" href="{{route('inventario.ip.index')}}">TODAS</a>
 <a style="background-color: red;" href="{{ route('inventario.ip.show', 1) }}">Sotano</a>
 <a style="background-color: orange;" href="{{ route('inventario.ip.show', 2) }}">Bunker</a>
 <a style="background-color: purple;" href="{{ route('inventario.ip.show', 3) }}">Manteniemiento</a>
@@ -31,18 +31,9 @@
 			
 						<div class="fuente" style="background-color: {{$datos->color}};">{{$datos->name}}</div>
 					</div>
-						
+
 					</a>
-				
-				@else
-					<a data-url="{{ route('inventario.ip.create', $ip) }}" class="load-form-modal  anchor" data-toggle ="modal" data-target='#form-modal'>
-					
-					<div align="center" class="panel panel-default shadow">
-						<strong>{{$ip}}</strong>
-						<div class="fuentelibre">&nbsp;</div>
-					</div>
-					
-					</a>
+
 				@endif
 			@endfor
 	    </article>
